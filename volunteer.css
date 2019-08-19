@@ -16,7 +16,7 @@ h3{
   font-family: 'Didact Gothic', sans-serif;
   font-size: 50px;
 }
-.topnav input[type=text] {
+/* .topnav input[type=text] {
   padding: 40px;
   float: right;
   padding: 10px;
@@ -29,7 +29,7 @@ h3{
 
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .topnav a, .topnav input[type=text] {
     background-color:orange;
     float: none;
@@ -38,30 +38,38 @@ h3{
     width: 200%;
     margin: 0;
     padding: 16px;
-  }
+  } */
   /* .topnav input[type=text] {
     border: 1px solid #ccc;
   } */
-}
+/* }
 input[type=text] {
   width: 200px;
 }
 input[type=text]:focus {
-  }
+  } */
 
 
-#plants{
+#community{
   position: absolute;
   left: 500px;
   background-color: white;
+  border-radius: 50%
 }
-#lo{
+#tech{
+  position: absolute;
+  left: 500px;
+  background-color: white;
+  border-radius: 50%
+
+}
+/* #lo{
   position: absolute;
   left: 200px;
 }
 #help{
   position:absolute;
-  left: 800px;
+  left: 800px; */
 }
 
 html, body {
