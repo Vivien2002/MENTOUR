@@ -1,9 +1,13 @@
 <!DOCTYPE html>
+<!-- <form action="login.php" method="post">
+  <input type="text" id="username" name="username"/>
+  <input type="password" id="password" name="password"/>
+  <input type="submit" name="Login" value="Login">
+</form> -->
 <html>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box}
-
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
@@ -13,17 +17,14 @@ input[type=text], input[type=password] {
   border: none;
   background: #f1f1f1;
 }
-
 input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
-
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
-
 /* Set a style for all buttons */
 button {
   background-color: #4CAF50;
@@ -35,35 +36,29 @@ button {
   width: 100%;
   opacity: 0.9;
 }
-
 button:hover {
   opacity:1;
 }
-
 /* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
   background-color: #f44336;
 }
-
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
   float: left;
   width: 50%;
 }
-
 /* Add padding to container elements */
 .container {
   padding: 16px;
 }
-
 /* Clear floats */
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
-
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
   .cancelbtn, .signupbtn {
@@ -72,12 +67,23 @@ button:hover {
 }
 </style>
 <body>
-
+  <title>MENTOUR</title>
+  <h1>
+    <div id="title">
+      <center><img src = "MENTOUR.jpg" width="250" height="100"></center>
+      <hr>
+    </div>
+  </h1>
+  <script src = "home.js">
+</script>
 <form action="/action_page.php" style="border:1px solid #ccc">
   <div class="container">
     <h1>Login</h1>
 
     <hr>
+
+    <label for="username"><b>Username</b></label>
+    <input id="username123" type="text" placeholder="Enter Username" name="username" required>
 
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
@@ -92,12 +98,20 @@ button:hover {
 
 
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Login</button>
+      <button onclick="window.location.href='home.html'">Cancel</button>
+      <button onclick="login()"><a href=user.html>Login</a></button>
+      <script>
+      if (typeof(Storage) !== "undefined") {
+        localStorage.setItem("email", "janedoe@gmail.com");
+        document.getElementById("result").innerHTML = localStorage.getItem("email");
+        localStorage.setItem("password", "hello");
+        document.getElementById("result").innerHTML = localStorage.getItem("password");
+      } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+      }
+      </script>
     </div>
     <p> Don't Have An Account? <a href="sign.html"> Click Here to Make An Account!</a></p>
   </div>
-</form>
-
-</body>
+  </body>
 </html>
