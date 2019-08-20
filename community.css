@@ -1,6 +1,6 @@
 body{
-  background-color:#454545;
-  color:#D5C7BC;
+  background-color:#C5D5EA;
+  color:#E5B181;
 }
 h1{
   font-family: 'Barriecito', cursive;
@@ -21,4 +21,34 @@ h4{
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 14px;
 
+}
+.lownav {
+  background-color:aliceblue;
+  overflow: hidden;
+}
+
+.lownav a {
+  font-family: 'Amiri', serif;
+  float: left;
+  color: #c17767;
+  text-align: center;
+  float: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.lownav a:hover {
+  background-color:silver;
+  color: beige;
+
+}
+
+.lownav a.active {
+  background-color: red;
+  color: red;
+}
+
+.lownav-right{
+  float:right;
 }
