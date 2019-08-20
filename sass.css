@@ -1,57 +1,6 @@
-/*#title {
-
-  font-family: 'Merriweather', serif;
-  font-size:55px;
-  color:#000000;
+#header{
+  background: #ffa66b ;
 }
-#nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  display: inline-block;
-  border:1px solid #ccc;
-  border-width:1px 0;
-  list-style:none;
-  margin:0;
-  padding:0;
-  text-align:center;
-}
-#nav li{
-    display:inline;
-}
-#one{
-  font-family: 'Merriweather', serif;
-  font-size:15px;
-}
-#green{
-  font-family: 'Merriweather', serif;
-  font-size:45px;
-}
-#call{
-  font-family: 'Merriweather', serif;
-  font-size:10px;
-} */
-/* .lownav {
-  background-color: white;
-  overflow: hidden;
-}
-
-.lownav a {
-  font-family: 'Amiri', serif;
-  float: right;
-  color: #d4af37;
-  text-align: right;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 24px;
-}
-
-.lownav a:hover {
-  background-color:white;
-  color: #BDC5CB; */
-
-/* } */
 .container {
   position: relative;
   max-width: 800px; /* Maximum width */
@@ -74,33 +23,33 @@ font-family: 'Merriweather', serif;
 font-size:75px;
 }
 #hours{
-  font-family: 'Lexend Giga', sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 12px;
-  color: lightsteelblue;
 }
 
 h2{
   font-family:'Amiri', serif;
 }
 .topnav {
-  background-color: white;
+  background-color: #FFFAF0;
+;
   overflow: hidden;
 }
 
 .topnav a {
   font-family: 'Amiri', serif;
   float: left;
-  color: #d4af37;
+  color: #c17767;
   text-align: center;
   float: ;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .topnav a:hover {
-  background-color:white;
-  color: #BDC5CB;
+  background-color:silver;
+  color: beige;
 
 }
 
@@ -111,10 +60,4 @@ h2{
 
 .topnav-right{
   float:right;
-}
-
-#right  {
-  position: relative;
-  left: 900px;
-
 }
