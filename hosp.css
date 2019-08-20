@@ -1,3 +1,9 @@
+body{
+  background-color:#C5D5EA;
+  color:#E5B181;
+}
+
+
 h1{
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
@@ -15,6 +21,11 @@ h4{
   font-size: 14px;
 }
 h5{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Belleza', sans-serif;
   font-size: 14px;
+}
+h6{
+  font-family: 'Barriecito', cursive;
+  font-size: 30px;
+  color: #202C59;
 }
