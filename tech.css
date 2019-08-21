@@ -1,24 +1,61 @@
+
 body{
-  background-color:#454545;
-  color:#D5C7BC;
+  background-color:#C5D5EA;
+  color:#202C59;
 }
 h1{
   font-family: 'Barriecito', cursive;
-  font-size: 30px;
+  font-size: 40px;
 
 }
 h2{
   font-family: 'Belleza';
-  font-size: 20px;
+  font-size: 30px;
   text-decoration: none;
 }
 h3{
   font-family: 'Fredericka the Great', cursive;
-  font-size: 14px;
+  font-size: 20px;
 
 }
 h4{
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 14px;
+  font-size: 20px;
 
+}
+h5{
+  background-color:#C5D5EA;
+}
+
+}
+.lownav {
+  background-color:aliceblue;
+  overflow: hidden;
+}
+
+.lownav a {
+  font-family: 'Amiri', serif;
+  float: left;
+  color: #c17767;
+  background-color:#C5D5EA;
+  text-align: center;
+  float: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.lownav a:hover {
+  background-color:silver;
+  color: beige;
+
+}
+
+.lownav a.active {
+  background-color: red;
+  color: red;
+}
+
+.lownav-right{
+  float:right;
 }
