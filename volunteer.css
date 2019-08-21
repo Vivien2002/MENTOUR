@@ -5,62 +5,211 @@
   border-radius: 50%; */
 h2{
   font-family: 'Raleway', sans-serif;
-  font-size: 80px;
+  font-size: 300px:
 }
 h3{
   background-image: url("mar.jpg");
   background-size: cover;
+}
+h4{
+  top: 270px;
+  right:700px;
 }
 .boxed {
   background-color:white;
   font-family: 'Didact Gothic', sans-serif;
   font-size: 50px;
 }
-/* .topnav input[type=text] {
-  padding: 40px;
-  float: right;
-  padding: 10px;
-  border: pink;
-  margin-top: 20px;
-  margin-right: 18px;
-  font-size: 18px;
+.image1 {
+  opacity: 1;
+  width:248px;
+  height:248px;
+  transition: .5s ease;
+  backface-visibility: hidden; */
+}
+
+.image2 {
+  opacity: 1;
+  width:248px;
+  height:248px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image3 {
+  opacity: 1;
+  width:248px;
+  height:248px;
+  transition: .5s ease;
+  backface-visibility: hidden; */
+}
+
+.image4 {
+  opacity: 1;
+  width:248px;
+  height:248px;
+  transition: .5s ease;
+  backface-visibility: hidden; */
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 420px;
+  left: 320px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middl{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 420px;
+  right: 226px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.midd {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 720px;
+  right: 226px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mid {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 720px;
+  left: 310px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* .container:hover .image{
+  opacity: 0.3;
+} */
+.container:hover .middle {
+  opacity: 1;
+}
+
+.container:hover .middl {
+  opacity: 1;
+}
+
+.container:hover .midd {
+  opacity: 1;
+}
+
+.container:hover .mid{
+  opacity: 1;
+}
+
+.text {
+  background-color:lavender;
+  color: white;
+  font-size: 16px;
+  padding: 6px 8px;
+}
+
+.container:hover .image1{
+  opacity: 0.3;
+}
+
+.container:hover .image2{
+  opacity: 0.3;
+}
+.container:hover .image3{
+  opacity: 0.3;
+}
+
+.container:hover .image4{
+  opacity: 0.3;
 }
 
 
 
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-/* @media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type=text] {
-    background-color:orange;
-    float: none;
-    display: block;
-    text-align: left;
-    width: 200%;
-    margin: 0;
-    padding: 16px;
-  } */
-  /* .topnav input[type=text] {
-    border: 1px solid #ccc;
-  } */
-}
-/* input[type=text] {
-  width: 200px;
-}
-input[type=text]:focus {
-  } */
-
-
-
+.text {
+  background-color:#b3e2ff;
+  color: black;
+  font-size: 16px;
+  padding: 6px 8px;
 }
 
-#medical{
-  border-radius: 50%
-
+#community{
+  /* left: 500px; */
+  position: absolute;
+  top: 298px;
+  right:840px;
+  width:248px;
+  height:248px;
+  background-color: white;
+  border-radius: 50%;
+}
+#tech{
+  position: absolute;
+  top: 298px;
+  right:180px;
+  background-color: white;
+  border-radius: 50%;
+}
 #women{
-  border-radius: 50%
+  position: absolute;
+  top: 598px;
+  right:840px;
+  border-radius: 50%;
+}
+#medical{
+  position: absolute;
+  top: 598px;
+  right:180px;
+  border-radius: 50%;
+}
+.topnav {
+  background-color:aliceblue;
+;
+  overflow: hidden;
 }
 
+.topnav a {
+  font-family: 'Amiri', serif;
+  float: left;
+  color: #c17767;
+  text-align: center;
+  float: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 28px;
 }
+
+.topnav a:hover {
+  background-color:silver;
+  color: beige;
+
+}
+
+.topnav a.active {
+  background-color: white;
+  color: red;
+}
+
+.topnav-right{
+  float:right;
+}
+
+
+
 /* #lo{
   position: absolute;
   left: 200px;
@@ -71,14 +220,12 @@ input[type=text]:focus {
 }
 
 html, body {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 body {
   background: aliceblue;
 }
-
-.
 
 /* When the input field gets focus, change its width to 100% */
