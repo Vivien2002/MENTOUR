@@ -2,11 +2,26 @@ var x;
 
 function login(){
   x = document.getElementById("username123").value;
-  document.cookie = x;
+  document.cookie = "username="+x+";";
   window.location.href='user.html';
 }
 
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
 function greeting() {
-  document.getElementById("greeting").innerHTML = document.cookie.substring(0, document.cookie.length - 1);
-  document.cookie="username123=;expires = Mon,19 Aug 2019 00:00:00 EST";
+  document.getElementById("greeting").innerHTML = getCookie("username");
 }

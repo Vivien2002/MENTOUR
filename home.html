@@ -1,392 +1,375 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="sass.css">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Ubuntu+Condensed&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Amiri&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lexend+Giga&display=swap" rel="stylesheet">
-
-  <title>MENTOUR</title>
-    <div id="header">
-      <center><img src = "MENTOUR.jpg.png" width="250" height="100"></center>
-      <hr>
-    </div>
-    <br>
-    <br>
+ <link rel="stylesheet" href="sass.css">
+ <link href="https://fonts.googleapis.com/css?family=Merriweather|Ubuntu+Condensed&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Amiri&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Lexend+Giga&display=swap" rel="stylesheet">
+ <title>MENTOUR</title>
+ <div id="header">
+   <center><img src = "MENTOUR.jpg.png" width="250" height="100"></center>
+    <hr>
+  </div>
+  <br>
+  <br>
   <form action ="home.html">
-  <input type = "image" src="casa.png" alt = "submit" id="home" >
+    <input type = "image" src="casa.png" alt = "submit" id="home" >
   </form>
   <form action ="news.html">
-  <input type = "image" src="paper.png" alt = "submit" id="paper" >
+    <input type = "image" src="paper.png" alt = "submit" id="paper" >
   </form>
   <form action ="uni.html">
-  <input type = "image" src="cap.png" alt = "submit" id="grad" >
+    <input type = "image" src="capi.png" alt = "submit" id="grad" >
   </form>
-  <form action ="calender.html">
-  <input type = "image" src="cal.png" alt = "submit" id="cal" >
+  <form action ="date.html">
+    <input type = "image" src="cal.png" alt = "submit" id="cal" >
   </form>
   <form action ="volunteer.html">
-  <input type = "image" src="helping.png" alt = "submit" id="helping" >
+    <input type = "image" src="helping.png" alt = "submit" id="helping" >
   </form>
 
-    <div class="topnav">
-      <a  href="home.html">Home</a>
-      <a href="now.html">News</a>
-      <a href="uni.html">Colleges</a>
-      <a href="date.html">Calendar</a>
-      <a href="vol.html">Volunteer</a>
-    </div>
-    <body style="background-color:#FFFAF0;">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      * {box-sizing: border-box;}
-      body {font-family: Verdana, sans-serif;}
-      .mySlides {display: none;}
-      img {vertical-align: middle;}
-      .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-      }
-      .text {
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-      }
-      .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-      }
-      .dot {
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-      }
-      .active {
-        background-color: #717171;
-      }
-      .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-      }
-      @-webkit-keyframes fade {
-        from {opacity: .4}
+   <div class="topnav">
+     <a  href="home.html">Home</a>
+     <a href="now.html">News</a>
+     <a href="uni.html">Colleges</a>
+     <a href="date.html">Calendar</a>
+     <a href="volunteer.html">Volunteer</a>
+   </div>
+   <body style="background-color:#FFFAF0;">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+   * {box-sizing: border-box}
+   body {font-family: Verdana, sans-serif; margin:0}
+   .mySlides {display: none}
+   img {vertical-align: middle;}
+
+   /* Slideshow container */
+ .slideshow-container {
+   max-width: 1000px;
+   position: relative;
+   margin: auto;
+ }
+ .text {
+   color: #f2f2f2;
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+ }
+
+/* Number text (1/3 etc) */
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+
+/* The dots/bullets/indicators */
+ .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+
+
+
+
+/* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+/* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+/* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+/* Caption text */
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+/* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
         to {opacity: 1}
       }
-      @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-      }
-  /* On smaller screens, decrease text size */
-      @media only screen and (max-width: 300px) {
-        .text {font-size: 11px}
-      }
-      </style>
-    </head>
-    <body>
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="girl.jpg" style="width:100%">
-          <div class="text">Girls Who Code</div>
-        </div>
 
-        <div class="mySlidesfade">
-          <div class="numbertext">2 / 3</div>
-          <img src="look.jpg" style="width:100%">
-          <div class="text">Hello</div>
-        </div>
-        <div class="mySlidesfade">
-          <div class="numbertext">3 / 3</div>
-          <img src="reading.jpg" style="width:100%">
-          <div class="text">Hello</div>
-        </div>
-
-        <!-- <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="." style="width:100%">
-          <div class="text">Greetings</div>
-        </div> -->
-      </div>
-      <br>
-
-      <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-      <script>
-      var slideIndex = 0;
-      showSlides();
-      function showSlides() {
-        var i;
-        var slides =
-      document.getElementsByClassName("mySlides");
-        var dots =
-      document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-      }
-      </script>
-    </style>
+      /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  </style>
   </head>
   <body>
-    <!-- <div class="slideshow-container">
-      <div class="mySlides fade">
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="girl.jpg" style="width:100%">
-      <div class="text">Caption Text</div>
+      <img src="hold.jpg" style="width:1000px" style="height:200px" class="roundpic">
     </div>
+
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="look.jpg" style="width:100%">
-      <div class="text">Caption Two</div>
+      <img src="stephviv.jpg"style="width:1000px" style="height:200px" class="roundpic">
     </div>
+
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <img src="frustated.jpg" style="width:100%">
-      <div class="text">Caption Three</div>
+      <img src="for.jpg" style="width:1000px" style="height:200px" class="roundpic">
     </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
 
-
+    </div>
     <br>
 
-  <!-- <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div> -->
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
 
     <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    function showSlides(n) {
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
       var i;
       var slides = document.getElementsByClassName("mySlides");
       var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
       slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
     </script>
-    <div class="container">
-      <img src="frustated.jpg" style="width:100%;">
-      <div class="content">
-        <center>  <h1>Frustrated About College?</h1> </center>
-          <p><center>We want to help! Mentour offers free volunteer suggestions, college search help and a calender filled with popular college information sessions and tours.
-          Here at Mentour we are dedicated to our students and want to make sure every student succeeds! Come and sign up today... </center></p>
-      </div>
+  <div class="container">
+   <img src="frustated.jpg" style="width:100%;">
+    <div class="content">
+      <center>  <h1>Frustrated About College?</h1> </center>
+       <p><center>We want to help! Mentour offers free volunteer suggestions, college search help and a calender filled with popular college information sessions and tours.
+         Here at Mentour we are dedicated to our students and want to make sure every student succeeds! Come and sign up today... </center></p>
     </div>
+  </div>
 
-    <br>
-    <div class="container">
-      <img src="reading.jpg" alt="Notebook" style="width:100%;">
-      <div class="content">
-        <center>  <h1>Our Volunteer Opportunities</h1> </center>
-          <p><center>We want to make sure that all our students are able to experience their career path with a plethora of volunteer options. We offfer great volunteer services for every major and career.</center> </p>
-      </div>
-    </div>
+   <br>
+   <div class="container">
+     <img src="reading.jpg" alt="Notebook" style="width:100%;" >
+     <div class="content">
+       <center>  <h1>Our Volunteer Opportunities</h1> </center>
+         <p><center>We want to make sure that all our students are able to experience their career path with a plethora of volunteer options. We offfer great volunteer services for every major and career.</center> </p>
+     </div>
+   </div>
 
-    <br>
-    <div class="container">
-      <img src="girl.jpg" alt="Notebook" style="width:100%;">
-      <div class="content">
-      <center>  <h1>The Colleges We provide Information About</h1> </center>
-        <p><center>We offer information about a great a variety of popular colleges in New York State.This website is meant for users in the state and those who want to maybe experience New York. Those who want to learn more about the education offered in this wonderful state. </center> </p>
-      </div>
-    </div>
-      <br>
-    </br>
-    <div class="container">
-      <img src="look.jpg" alt="Notebook" style="width:100%;">
-      <div class="content">
-      <center>  <h1>About Us?</h1> </center>
-        <p><center>We are a dedicated group of student creators that want our peers to have the same resources we did. We want all our peers to be succcessful and happy with their college decisions. </center></p>
-      </div>
-    </div>
-    <br>
-    </br>
-    </br>
-    <style>
-    img {
-      border-radius: 50%;
-    }
-    div1{
-      width: 300px;
-      padding: 5px;
-      border:3px solid beige;
-      margin:150px;
-    }
-    </style>
-    <!-- <img src="pencil.png"width="150" height="250"> -->
-    <br>
-    <br>
-    <br>
-    <hr>
-    <h2>
-    <center>Testimonials From Our Users:</center>
-    </h2>
-    <!-- <style>
-    img {
-      border-radius: 50%;
-    }
-    div1{
-      width: 300px;
-      padding: 5px;
-      border:3px solid beige;
-      margin:150px;
-    }
-    </style> -->
-    <p>
-      <center>Mentour is an amazing website that guided me through the college process.</div>&#8212;Anna, Class of 2023 of Hunters College</center>
-    </p>
-    <br>
+   <br>
+   <div class="container">
+     <img src="girl.jpg" alt="Notebook" style="width:100%;">
+     <div class="content">
+     <center>  <h1>The Colleges We provide Information About</h1> </center>
+       <p><center>We offer information about a great a variety of popular colleges in New York State.This website is meant for users in the state and those who want to maybe experience New York. Those who want to learn more about the education offered in this wonderful state. </center> </p>
+     </div>
+   </div>
+     <br>
+   </br>
+   <div class="container">
+     <img src="look.jpg" alt="Notebook" style="width:100%;">
+     <div class="content">
+     <center>  <h1>About Us?</h1> </center>
+       <p><center>We are a dedicated group of student creators that want our peers to have the same resources we did. We want all our peers to be succcessful and happy with their college decisions. </center></p>
+     </div>
+   </div>
+   <br>
+   </br>
+   </br>
+   <style>
+   img {
+     border-radius: 50%;
+   }
+   div1{
+     width: 300px;
+     padding: 5px;
+     border:3px solid beige;
+     margin:150px;
+   }
+   </style>
+   <div class="parallax"></div>
+   <!-- <img src="pencil.png"width="150" height="250"> -->
+   <br>
+   <br>
+   <br>
+   <hr>
+   <h2>
+   <center>Testimonials From Our Users:</center>
+   </h2>
+   <!-- <style>
+   img {
+     border-radius: 50%;
+   }
+   div1{
+     width: 300px;
+     padding: 5px;
+     border:3px solid beige;
+     margin:150px;
+   }
+   </style> -->
+   <p>
+     <center>Mentour is an amazing website that guided me through the college process.</div>&#8212;Anna, Class of 2023 of Hunters College</center>
+   </p>
+   <br>
 
-    <p>
-      <center>When I was bombarded with the colleges that were avaiable for me, Mentour stood beside me and guided me, I would recommend this to anyone.&#8212; Jack, Class of 2022 of University of Chicago</center></div1>
-    </p>
-    <br>
-    <br>
+   <p>
+     <center>When I was bombarded with the colleges that were avaiable for me, Mentour stood beside me and guided me, I would recommend this to anyone.&#8212; Jack, Class of 2022 of University of Chicago</center></div1>
+   </p>
+   <br>
+   <br>
 
-    <hr>
+   <hr>
 
-    <div id="one"><font-family: 'Merriweather', serif;
-    font-size:45px;>
-      <center> Contact Us</center>
-    </div>
-    <div id="call">
-      <center>Email:mentour@college.org</center>
-      <center>Phone: (619)-347-0637</center>
-      <center>Fax: (908)-642-3352</center>
-    </div>
-    <br>
-    <br>
-    <div id="hours">
-      <center>Hours</center>
-      <center>Mon : 9:00 am - 5:00pm</center>
-      <center>Tue : 9:00 am - 5:00pm</center>
-      <center>Wed : 9:00 am - 5:00pm</center>
-      <center>Thu : 9:00 am - 5:00pm</center>
-      <center>Fri : 9:00 am - 5:00pm</center>
-      <center>Sat : Closed</center>
-      <center>Sun : Closed</center>
-      <footer class="footer-distributed">
+   <div id="one"><font-family: 'Merriweather', serif;
+   font-size:45px;>
 
-		<div class="footer-left">
+   </div>
 
-			<h3><img src="mentour.jpg.png" width="200" height="100"></h3>
+   <!-- <div id="call">
+     <center>Email:mentour@college.org</center>
+     <center>Phone: (619)-347-0637</center>
+     <center>Fax: (908)-642-3352</center>
+   </div>
+   <br>
+   <br>
+   <div id="hours">
+     <center>Hours</center>
+     <center>Mon : 9:00 am - 5:00pm</center>
+     <center>Tue : 9:00 am - 5:00pm</center>
+     <center>Wed : 9:00 am - 5:00pm</center>
+     <center>Thu : 9:00 am - 5:00pm</center>
+     <center>Fri : 9:00 am - 5:00pm</center>
+     <center>Sat : Closed</center>
+     <center>Sun : Closed</center> -->
+     <footer class="footer-distributed">
 
-			<p class="footer-links">
-				<a href="home.html">Home</a>
-				·
-				<a href="news.htmml">News</a>
-				·
-				<a href="uni.html">College</a>
-				·
-				<a href="cal.html">Calendar</a>
-				·
-				<a href="volunteer.html">Volunteer</a>
-				·
+   <div class="footer-left">
 
-			</p>
+     <h3><img src="mentour.jpg.png" width="200" height="100"></h3>
 
-			<p class="footer-company-name">MENTOUR &copy; 2019</p>
-		</div>
+     <p class="footer-links">
+       <a href="home.html">Home</a>
+       ·
+       <a href="news.htmml">News</a>
+       ·
+       <a href="uni.html">College</a>
+       ·
+       <a href="cal.html">Calendar</a>
+       ·
+       <a href="volunteer.html">Volunteer</a>
+       ·
 
-		<div class="footer-center">
+     </p>
 
-			<div>
-				<i class="fa fa-map-marker"></i>
-        <img src="loc.jpg" width="40" height="40">
-				<p><span>7 W 34th St</span> New York, NY</p>
-			</div>
+     <p class="footer-company-name">MENTOUR &copy; 2019</p>
+   </div>
 
-			<div>
-				<i class="fa fa-phone"></i>
-        <img src="call.png" width="70" height="40">
-				<p>(619)-347-0637<BR>(908)-642-3352</p>
+   <div class="footer-center">
 
-			</div>
+     <div>
+       <i class="fa fa-map-marker"></i>
+       <img src="loc.jpg" width="40" height="40">
+       <p><span>7 W 34th St</span> New York, NY</p>
+     </div>
 
-			<div>
-				<i class="fa fa-envelope"></i>
-        <img src="mail.png" width="40" height="40">
-				<p><a href="mentour@college.org">mentour@college.org</a></p>
-			</div>
+     <div>
+       <i class="fa fa-phone"></i>
+       <img src="call.png" width="70" height="40">
+       <p>(619)-347-0637<BR>(908)-642-3352</p>
 
-		</div>
+     </div>
 
-		<div class="footer-right">
+     <div>
+       <i class="fa fa-envelope"></i>
+       <img src="mail.png" width="40" height="40">
+       <p><a href="mentour@college.org">mentour@college.org</a></p>
+     </div>
 
-			<p class="footer-company-about">
-				<span>About the company</span>
-        We are 4 young teenage girls who experienced similar problems in the college application process. With the help of Girls Who Code and Amazon we were provided the resources needed to create our all in one website to "tour" colleges.
-			</p>
-	</div>
-		<div class="footer-icons">
+   </div>
 
-    <h4><form action ="https://facebook.com"><i class="fa fa-facebook"></i>
-    <input type = "image" src="faceb.png" alt = "submit" width="68" height="40"></h4>
-    </form>
-    <h5><form action ="https://instagram.com"><i class="fa fa-facebook"></i>
-    <input type = "image" src="insta.png" alt = "submit" width="66" height="50"></h5>
-    </form>
-    <h6><form action ="https://twitter.com"><i class="fa fa-instagram"></i>
-    <input type = "image" src="twitter.png" alt = "submit"width="100" height="50"></h6>
-    </form>
-    <h7><form action ="https://linkedin.com"><i class="fa fa-linkedin"></i>
-    <input type = "image" src="linkedin.png" alt = "submit"width="40" height="40"></h7>
-    </form>
-    <h8><form action ="https://github.com/Vivien2002/MENTOUR"><i class="fa fa-github"></i>
-    <input type = "image" src="git.png" alt = "submit"width="44" height="42"></h8>
-    </form>
-    <h9><form action ="https://www.amazon.com/photos/groups/share/inwZwmQGSJS1PrUPrmJM6g.5i9VT2xYUvQJ67VorBxbcd?pageIndex=0"><i class="fa fa-facebook"></i>
-    <input type = "image" src="amazon.png" alt = "submit"width="40" height="40"></h9>
+   <div class="footer-right">
 
-		</div>
+     <p class="footer-company-about">
+       <span>About the company</span>
+       We are 4 young teenage girls who experienced similar problems in the college application process. With the help of Girls Who Code and Amazon we were provided the resources needed to create our all in one website to "tour" colleges.
+     </p>
+ </div>
+   <div class="footer-icons">
 
-</footer>
+   <div id="h4"><form action ="https://facebook.com"><i class="fa fa-facebook"></i>
+   <input type = "image" src="faceb.png" alt = "submit" width="70" height="40"></h4></div>
+   </form>
+   <div id="h5"><form action ="https://instagram.com"><i class="fa fa-instagram"></i>
+   <input type = "image" src="insta.png" alt = "submit" width="66" height="50"></h5></div>
+   </form>
+   <div id="h6"><form action ="https://twitter.com"><i class="fa fa-twitter"></i>
+   <input type = "image" src="twitter.png" alt = "submit"width="110" height="52"></h6></div>
+   </form>
+   <div id="h7"><form action ="https://linkedin.com"><i class="fa fa-linkedin"></i>
+   <input type = "image" src="linkedin.png" alt = "submit"width="40" height="40"></h7></div>
+   </form>
+   <div id="h8"><form action ="https://github.com/Vivien2002/MENTOUR"><i class="fa fa-github"></i>
+   <input type = "image" src="git.png" alt = "submit"width="44" height="42"></h8></div>
+   </form>
+   <div id="h9"><form action ="https://www.amazon.com/photos/groups/share/inwZwmQGSJS1PrUPrmJM6g.5i9VT2xYUvQJ67VorBxbcd?pageIndex=0"><i class="fa fa-facebook"></i>
+   <input type = "image" src="amazon.png" alt = "submit"width="40" height="40"></h9></div>
+
+   </div>
+ </footer>
 </body3>
 </html>
-
-    </div>
-  </body>
+</div>
+</body>
 </html>

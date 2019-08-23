@@ -10,7 +10,9 @@ h1{
   padding: 1px;
   text-align: center;
   background: #e3ae4d;
-  color: white;
+  color:white;
+
+
   font-size: 15px;
 }
 
@@ -21,4 +23,35 @@ h1{
     background: #e3634d;
     color: white;
     font-size: 45px;
+}
+.topnav {
+  background-color:#e3ae4d;
+;
+  overflow: hidden;
+}
+
+.topnav a {
+  font-family: 'Amiri', serif;
+  float: left;
+  color: #c17767;
+  text-align: center;
+  float: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.topnav a:hover {
+  background-color:silver;
+  color: beige;
+
+}
+
+.topnav a.active {
+  background-color: white;
+  color: red;
+}
+
+.topnav-right{
+  float:right;
 }
