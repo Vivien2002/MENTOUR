@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!-- <form action="login.php" method="post">
-  <input type="text" id="username" name="username"/>
-  <input type="password" id="password" name="password"/>
-  <input type="submit" name="Login" value="Login">
-</form> -->
 <html>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -66,24 +61,15 @@ button:hover {
   }
 }
 </style>
+<head>
+</head>
 <body>
-  <title>MENTOUR</title>
-  <h1>
-    <div id="title">
-      <center><img src = "MENTOUR.jpg" width="250" height="100"></center>
-      <hr>
-    </div>
-  </h1>
-  <script src = "home.js">
-</script>
+
 <form action="/action_page.php" style="border:1px solid #ccc">
   <div class="container">
     <h1>Login</h1>
 
     <hr>
-
-    <label for="username"><b>Username</b></label>
-    <input id="username123" type="text" placeholder="Enter Username" name="username" required>
 
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
@@ -98,20 +84,12 @@ button:hover {
 
 
     <div class="clearfix">
-      <button onclick="window.location.href='home.html'">Cancel</button>
-      <button onclick="login()"><a href=user.html>Login</a></button>
-      <script>
-      if (typeof(Storage) !== "undefined") {
-        localStorage.setItem("email", "janedoe@gmail.com");
-        document.getElementById("result").innerHTML = localStorage.getItem("email");
-        localStorage.setItem("password", "hello");
-        document.getElementById("result").innerHTML = localStorage.getItem("password");
-      } else {
-        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-      }
-      </script>
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Login</button>
     </div>
     <p> Don't Have An Account? <a href="sign.html"> Click Here to Make An Account!</a></p>
   </div>
-  </body>
+</form>
+
+</body>
 </html>
